@@ -1,0 +1,45 @@
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+a:hover {
+  @apply text-secondary;
+}
+
+.btn {
+  @apply rounded-full py-2 px-4;
+}
+
+/* -------- SKILLS SECTION ---------- */
+
+.skills_title {
+  @apply text-5xl mb-6 text-white font-medium relative;
+}
+
+.skills_card {
+  @apply border-2 border-primary rounded-xl mx-10 shadow-xl overflow-hidden flex flex-col items-center;
+}
+
+.skills_card_title {
+  @apply bg-primary text-center py-4 text-2xl border-b-2 border-primary w-full text-white font-semibold;
+}
+
+.skills_card_main {
+  @apply flex flex-col w-full items-center px-10 py-8;
+}
+
+.skills_card_main_part {
+  @apply w-32 flex flex-col font-medium;
+}
+
+.skills_card_main_item {
+  @apply flex items-center my-2;
+}
+
+.skills_card_main_icon {
+  @apply inline-block text-primary mr-4 text-4xl;
+}
