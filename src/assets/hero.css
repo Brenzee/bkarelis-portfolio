@@ -1,0 +1,39 @@
+#Brick1 {
+  animation: brick 0.8s ease-in-out alternate infinite;
+}
+#Brick2 {
+  animation: brick 1.5s ease-in-out alternate infinite;
+}
+#Brick3 {
+  animation: brick 0.7s ease-in-out alternate infinite;
+}
+#Brick4 {
+  animation: brick 1.1s ease-in-out alternate infinite;
+}
+#Brick5 {
+  animation: brick 1.7s ease-in-out alternate infinite;
+}
+#Brick6 {
+  animation: brick 0.8s ease-in-out alternate infinite;
+}
+#Brick7 {
+  animation: brick2 2s ease-in-out alternate infinite;
+}
+
+@keyframes brick {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-30px);
+  }
+}
+
+@keyframes brick2 {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(30px);
+  }
+}

@@ -19360,8 +19360,8 @@ video {
 
 a:hover {
   --text-opacity: 1;
-  color: #d4c1ec;
-  color: rgba(212, 193, 236, var(--text-opacity));
+  color: #736ced;
+  color: rgba(115, 108, 237, var(--text-opacity));
 }
 
 .btn {
@@ -19370,6 +19370,8 @@ a:hover {
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-duration: 100ms;
 }
 
 /* -------- SKILLS SECTION ---------- */
@@ -19378,8 +19380,8 @@ a:hover {
   font-size: 3rem;
   margin-bottom: 1.5rem;
   --text-opacity: 1;
-  color: #fef9ff;
-  color: rgba(254, 249, 255, var(--text-opacity));
+  color: #000;
+  color: rgba(0, 0, 0, var(--text-opacity));
   font-weight: 500;
   position: relative;
 }
@@ -19450,6 +19452,41 @@ a:hover {
   color: rgba(115, 108, 237, var(--text-opacity));
   margin-right: 1rem;
   font-size: 2.25rem;
+}
+
+/* ------- PORTFOLIO --------- */
+
+.portfolio_card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  border-width: 2px;
+  --border-opacity: 1;
+  border-color: #736ced;
+  border-color: rgba(115, 108, 237, var(--border-opacity));
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.portfolio_card_title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio_card_buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0.5rem;
+  --text-opacity: 1;
+  color: #fef9ff;
+  color: rgba(254, 249, 255, var(--text-opacity));
+  font-weight: 600;
+  width: 100%;
 }
 
 @media (min-width: 640px) {

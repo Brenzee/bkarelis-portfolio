@@ -1,42 +1,56 @@
 import React from 'react'
-import { FaGithub } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
-
 import PortfolioItem from './PortfolioItem'
+import Work from './Work'
 
 const Portfolio = () => {
   return (
-    <div className='container mx-auto my-8'>
-      <h1 className='text-4xl font-medium mb-8 ml-4'>Portfolio</h1>
-      <div className='flex flex-wrap '>
-        <div className='flex flex-col lg:flex-row mx-10 lg:items-center border-2 border-primary rounded-xl overflow-hidden shadow-2xl'>
-          <img
-            className='w-full min-h-full lg:w-5/12 object-cover object-left'
-            src='/images/HOL.png'
-            alt=''
-          />
-          <div className='w-full  my-6 ml-0 lg:w-7/12 lg:my-0 lg:ml-4'>
-            <h3 className='text-xl font-medium text-center my-4 lg:my-0 lg:pb-4 lg:text-2xl'>
-              <Link>Website House Of Light</Link>
-            </h3>
-            <div className='flex flex-col lg:flex-row mx-6 '>
-              <div className='w-full'>
-                <PortfolioItem>React</PortfolioItem>
-                <PortfolioItem>React Router</PortfolioItem>
-                <PortfolioItem>Framer Motion</PortfolioItem>
-                <PortfolioItem>React Snap</PortfolioItem>
-                <PortfolioItem>React Helmet</PortfolioItem>
-                <PortfolioItem>Server Hosting</PortfolioItem>
-              </div>
-              <div className='flex justify-around items-center my-4 text-white font-semibold w-full'>
-                <Link className='btn bg-primary'>GitHub</Link>
-                <Link className='btn bg-primary'>Website</Link>
-              </div>
-            </div>
-          </div>
+    <>
+      <div className='container relative mx-auto my-8' id='portfolio'>
+        <h1 className='skills_title ml-4'>Portfolio</h1>
+        <div className='flex flex-wrap '>
+          <Work
+            title='Website House Of Light'
+            imgSrc='/images/HOL.png'
+            website='https://hol.lv/en'
+            github='https://github.com/Brenzee/HOLWebsite'
+          >
+            <PortfolioItem>React</PortfolioItem>
+            <PortfolioItem>React Hooks</PortfolioItem>
+            <PortfolioItem>React Router</PortfolioItem>
+            <PortfolioItem>Framer Motion</PortfolioItem>
+            <PortfolioItem>React Snap</PortfolioItem>
+            <PortfolioItem>React Helmet</PortfolioItem>
+            <PortfolioItem>Server Hosting</PortfolioItem>
+          </Work>
+          <Work
+            title='Netflix Clone'
+            imgSrc='/images/Netflix.png'
+            website='https://netflix-clone-c3496.web.app/'
+            github='https://github.com/Brenzee/react-netflix-clone'
+          >
+            <PortfolioItem>React</PortfolioItem>
+            <PortfolioItem>Axios</PortfolioItem>
+            <PortfolioItem>React-youtube</PortfolioItem>
+            <PortfolioItem>movie-Trailer</PortfolioItem>
+            <PortfolioItem>Firebase</PortfolioItem>
+          </Work>
         </div>
       </div>
-    </div>
+      <svg
+        style={{ transform: 'rotate(180deg)' }}
+        width='100%'
+        height='150px'
+        xmlns='http://www.w3.org/2000/svg'
+        viewBox='0 0 1440 320'
+        preserveAspectRatio='none'
+      >
+        <path
+          fill='#736ced'
+          fillOpacity='1'
+          d='M0,192L48,192C96,192,192,192,288,213.3C384,235,480,277,576,288C672,299,768,277,864,240C960,203,1056,149,1152,133.3C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z'
+        ></path>
+      </svg>
+    </>
   )
 }
 
