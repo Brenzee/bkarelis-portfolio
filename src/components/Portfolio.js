@@ -9,7 +9,12 @@ const Portfolio = () => {
       <div className='container relative mx-auto my-8' id='portfolio'>
         <h1 className='skills_title ml-4'>Portfolio</h1>
         <div className='flex flex-col'>
-          <LazyLoad offsetTop={200}>
+          <LazyLoad
+            offsetTop={200}
+            onContentVisible={() =>
+              console.log('look ma I have been lazyloaded!')
+            }
+          >
             <Work
               title='Website House Of Light'
               imgSrc='/images/HOL.jpg'
@@ -25,7 +30,12 @@ const Portfolio = () => {
               <PortfolioItem>Server Hosting</PortfolioItem>
             </Work>
           </LazyLoad>
-          <LazyLoad offsetTop={200}>
+          <LazyLoad
+            offsetTop={200}
+            onContentVisible={() =>
+              console.log('look ma I have been lazyloaded!')
+            }
+          >
             <Work
               title='Netflix Clone'
               imgSrc='/images/Netflix.jpg'
