@@ -1,39 +1,44 @@
 import React from 'react'
 import PortfolioItem from './PortfolioItem'
 import Work from './Work'
+import LazyLoad from 'react-lazy-load'
 
 const Portfolio = () => {
   return (
     <>
       <div className='container relative mx-auto my-8' id='portfolio'>
         <h1 className='skills_title ml-4'>Portfolio</h1>
-        <div className='flex flex-wrap '>
-          <Work
-            title='Website House Of Light'
-            imgSrc='/images/HOL.jpg'
-            website='https://hol.lv/en'
-            github='https://github.com/Brenzee/HOLWebsite'
-          >
-            <PortfolioItem>React</PortfolioItem>
-            <PortfolioItem>React Hooks</PortfolioItem>
-            <PortfolioItem>React Router</PortfolioItem>
-            <PortfolioItem>Framer Motion</PortfolioItem>
-            <PortfolioItem>React Snap</PortfolioItem>
-            <PortfolioItem>React Helmet</PortfolioItem>
-            <PortfolioItem>Server Hosting</PortfolioItem>
-          </Work>
-          <Work
-            title='Netflix Clone'
-            imgSrc='/images/Netflix.jpg'
-            website='https://netflix-clone-c3496.web.app/'
-            github='https://github.com/Brenzee/react-netflix-clone'
-          >
-            <PortfolioItem>React</PortfolioItem>
-            <PortfolioItem>Axios</PortfolioItem>
-            <PortfolioItem>React-youtube</PortfolioItem>
-            <PortfolioItem>movie-Trailer</PortfolioItem>
-            <PortfolioItem>Firebase</PortfolioItem>
-          </Work>
+        <div className='flex flex-col'>
+          <LazyLoad offsetTop={200}>
+            <Work
+              title='Website House Of Light'
+              imgSrc='/images/HOL.jpg'
+              website='https://hol.lv/en'
+              github='https://github.com/Brenzee/HOLWebsite'
+            >
+              <PortfolioItem>React</PortfolioItem>
+              <PortfolioItem>React Hooks</PortfolioItem>
+              <PortfolioItem>React Router</PortfolioItem>
+              <PortfolioItem>Framer Motion</PortfolioItem>
+              <PortfolioItem>React Snap</PortfolioItem>
+              <PortfolioItem>React Helmet</PortfolioItem>
+              <PortfolioItem>Server Hosting</PortfolioItem>
+            </Work>
+          </LazyLoad>
+          <LazyLoad offsetTop={200}>
+            <Work
+              title='Netflix Clone'
+              imgSrc='/images/Netflix.jpg'
+              website='https://netflix-clone-c3496.web.app/'
+              github='https://github.com/Brenzee/react-netflix-clone'
+            >
+              <PortfolioItem>React</PortfolioItem>
+              <PortfolioItem>Axios</PortfolioItem>
+              <PortfolioItem>React-youtube</PortfolioItem>
+              <PortfolioItem>movie-Trailer</PortfolioItem>
+              <PortfolioItem>Firebase</PortfolioItem>
+            </Work>
+          </LazyLoad>
         </div>
       </div>
       <svg
