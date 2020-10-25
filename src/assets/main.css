@@ -19372,6 +19372,11 @@ a:hover {
   padding-right: 1rem;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
   transition-duration: 100ms;
+  cursor: pointer;
+}
+
+li {
+  cursor: pointer;
 }
 
 /* -------- SKILLS SECTION ---------- */

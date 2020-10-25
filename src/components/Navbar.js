@@ -33,9 +33,9 @@ const Navbar = () => {
               to='skills'
               onClick={() => setOpen(false)}
               spy={true}
-              offset={-300}
+              offset={0}
               smooth={true}
-              duration={500}
+              duration={700}
             >
               Skills
             </Link>
@@ -45,7 +45,7 @@ const Navbar = () => {
               to='portfolio'
               onClick={() => setOpen(false)}
               spy={true}
-              offset={-300}
+              offset={0}
               smooth={true}
               duration={500}
             >

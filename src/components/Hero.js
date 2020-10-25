@@ -1,5 +1,6 @@
 import React from 'react'
 import HeroSVG from '../assets/HeroSVG'
+import { Link } from 'react-scroll'
 
 const Hero = () => {
   return (
@@ -15,16 +16,20 @@ const Hero = () => {
               My name is Brendons Karelis and I am
               <span className='font-semibold'> Full-stack Developer</span>
             </h2>
-            <button className='btn bg-green-400 text-black mt-6 hover:bg-white hover:text-gray-900 font-medium'>
-              To the Portfolio
-            </button>
+            <div className=' mt-6'>
+              <Link
+                to='portfolio'
+                spy={true}
+                smooth={true}
+                duration={500}
+                className='btn bg-green-400 text-black hover:bg-white hover:text-gray-900 font-medium'
+              >
+                To the Portfolio
+              </Link>
+            </div>
           </div>
           <div className='w-full md:w-5/12'>
             <HeroSVG />
-            {/* <img
-              src='/images/MainWhiteWhite.svg'
-              alt='Brendons Karelis programmer full-stack developer'
-            /> */}
           </div>
         </div>
       </div>
