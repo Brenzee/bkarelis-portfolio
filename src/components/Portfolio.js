@@ -10,7 +10,7 @@ const Portfolio = () => {
         <div className='flex flex-wrap '>
           <Work
             title='Website House Of Light'
-            imgSrc='/images/HOL.png'
+            imgSrc='/images/HOL.jpg'
             website='https://hol.lv/en'
             github='https://github.com/Brenzee/HOLWebsite'
           >
@@ -24,7 +24,7 @@ const Portfolio = () => {
           </Work>
           <Work
             title='Netflix Clone'
-            imgSrc='/images/Netflix.png'
+            imgSrc='/images/Netflix.jpg'
             website='https://netflix-clone-c3496.web.app/'
             github='https://github.com/Brenzee/react-netflix-clone'
           >
