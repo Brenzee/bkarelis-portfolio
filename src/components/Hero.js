@@ -1,6 +1,7 @@
 import React from 'react'
 import HeroSVG from '../assets/HeroSVG'
 import { Link } from 'react-scroll'
+import LazyLoad from 'react-lazy-load'
 
 const Hero = () => {
   return (
@@ -29,7 +30,9 @@ const Hero = () => {
             </div>
           </div>
           <div className='w-full md:w-5/12'>
-            <HeroSVG />
+            <LazyLoad>
+              <HeroSVG />
+            </LazyLoad>
           </div>
         </div>
       </div>
