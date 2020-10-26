@@ -35,6 +35,18 @@ const Portfolio = () => {
             <PortfolioItem>movie-Trailer</PortfolioItem>
             <PortfolioItem>Firebase</PortfolioItem>
           </Work>
+          <Work
+            title='Amazon Clone'
+            imgSrc='/images/Amazon.jpg'
+            website='https://challenge-93fb6.web.app/'
+            github='https://github.com/Brenzee/amazon-clone-react'
+          >
+            <PortfolioItem>React</PortfolioItem>
+            <PortfolioItem>React Hooks</PortfolioItem>
+            <PortfolioItem>React Context API</PortfolioItem>
+            <PortfolioItem>Firebase</PortfolioItem>
+            <PortfolioItem>Stripe Checkout</PortfolioItem>
+          </Work>
         </div>
       </div>
       <svg
