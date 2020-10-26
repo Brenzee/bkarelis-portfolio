@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import './assets/main.css'
 import { BrowserRouter } from 'react-router-dom'
 
 // Component
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Skills from './components/Skills'
-import Portfolio from './components/Portfolio'
 import Footer from './components/Footer'
+
+const Skills = lazy(() => import('./components/Skills'))
+const Portfolio = lazy(() => import('./components/Portfolio'))
 
 function App() {
   return (
@@ -16,8 +17,12 @@ function App() {
         <Navbar />
         <main className='min-h-screen bg-white'>
           <Hero />
-          <Skills />
-          <Portfolio />
+          <Suspense fallback={<div />}>
+            <Skills />
+          </Suspense>
+          <Suspense fallback={<div />}>
+            <Portfolio />
+          </Suspense>
         </main>
         <Footer />
       </BrowserRouter>

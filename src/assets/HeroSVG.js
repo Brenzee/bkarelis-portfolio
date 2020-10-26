@@ -12,7 +12,7 @@ const HeroSVG = () => {
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
     >
-      <g id='undraw_coding_6mjf 1' clip-path='url(#clip0)'>
+      <g id='undraw_coding_6mjf 1' clipPath='url(#clip0)'>
         <g id='Brick3'>
           <path
             id='Vector'
@@ -273,7 +273,7 @@ const HeroSVG = () => {
               opacity='0.1'
               d='M428.14 148.2C428.14 148.2 500.86 75.52 579.29 146.87'
               stroke='black'
-              stroke-miterlimit='10'
+              strokeMiterlimit='10'
             />
             <path
               id='Vector_44'
@@ -290,8 +290,8 @@ const HeroSVG = () => {
                 id='Vector_46'
                 d='M130.75 276C130.75 276 172.12 365.84 130.75 439.12C89.38 512.4 123.66 718.12 233.59 747.64'
                 stroke='#535461'
-                stroke-width='2'
-                stroke-miterlimit='10'
+                strokeWidth='2'
+                strokeMiterlimit='10'
               />
               <path
                 id='Vector_47'
@@ -308,8 +308,8 @@ const HeroSVG = () => {
                 id='Vector_49'
                 d='M0.210022 572.42C0.210022 572.42 65.12 586.67 59.79 645.69C54.46 704.71 156.19 775.5 252.28 719.39'
                 stroke='#535461'
-                stroke-width='2'
-                stroke-miterlimit='10'
+                strokeWidth='2'
+                strokeMiterlimit='10'
               />
               <path
                 id='Vector_50'
@@ -371,9 +371,9 @@ const HeroSVG = () => {
           y2='47'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#808080' stop-opacity='0.25' />
-          <stop offset='0.54' stop-color='#808080' stop-opacity='0.12' />
-          <stop offset='1' stop-color='#808080' stop-opacity='0.1' />
+          <stop stopColor='#808080' stopOpacity='0.25' />
+          <stop offset='0.54' stopColor='#808080' stopOpacity='0.12' />
+          <stop offset='1' stopColor='#808080' stopOpacity='0.1' />
         </linearGradient>
         <clipPath id='clip0'>
           <rect width='900.94' height='787' fill='white' />
